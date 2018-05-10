@@ -5,6 +5,11 @@ public class Arche {
 	Stall<Saeuger> saeugerStall = new Stall<>();
 	Stall<Reptil> reptilStall = new Stall<Reptil>();
 
+	/***
+	 * @brief distribution of the elements to their adequate stalls 
+	 * @param animal
+	 * @return
+	 */
 	public boolean add(Tier animal) {
 		
 		if(animal instanceof Vogel) {
@@ -20,14 +25,17 @@ public class Arche {
 			return true;
 		}
 		return false;
-	}
-	
+	} 
+
+	/***
+	 * @brief printing the content of all three stalls
+	 */
 	public void printStallBelegung() {
 		
 		System.out.println("Vogel-Stall");
 		System.out.println(vogelStall.toString() + "\n");
 		System.out.println("------------------------------------------------------");
-		System.out.println("Saeuger-Stall");
+		System.out.println("Säuger-Stall");
 		System.out.println(saeugerStall.toString() + "\n");
 		System.out.println("------------------------------------------------------");
 		System.out.println("Reptil-Stall");

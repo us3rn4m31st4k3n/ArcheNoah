@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		Queue archeQ = new Queue();
 		Arche noah = new Arche ();
-		int qSize = 50;
+		int qSize = 100;
 		
 		archeQ.generateAnimalQ(qSize);
 		
